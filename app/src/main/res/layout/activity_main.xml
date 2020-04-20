@@ -6,13 +6,145 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imgAriana"
+        android:layout_width="126dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:srcCompat="@drawable/ariana"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <ImageView
+        android:id="@+id/imgCharlie"
+        android:layout_width="122dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:srcCompat="@drawable/cp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <ImageView
+        android:id="@+id/imgJustin"
+        android:layout_width="128dp"
+        android:layout_height="119dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgCharlie"
+        app:srcCompat="@drawable/justin"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <ImageView
+        android:id="@+id/imgShawn"
+        android:layout_width="130dp"
+        android:layout_height="117dp"
+        app:layout_constraintStart_toStartOf="@+id/imgAriana"
+        app:srcCompat="@drawable/Shawn"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <CheckBox
+        android:id="@+id/chkAriana"
+        android:layout_width="127dp"
+        android:layout_height="31dp"
+        android:text="Ariana Grande"
+        app:layout_constraintStart_toStartOf="@+id/imgAriana"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <CheckBox
+        android:id="@+id/chkCharlie"
+        android:layout_width="122dp"
+        android:layout_height="29dp"
+        android:text="Charlie Puth"
+        app:layout_constraintEnd_toEndOf="@+id/imgCharlie"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <CheckBox
+        android:id="@+id/chkShawn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:text="Shawn Mendes"
+        app:layout_constraintStart_toStartOf="@+id/imgShawn"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <CheckBox
+        android:id="@+id/chkJustin"
+        android:layout_width="123dp"
+        android:layout_height="33dp"
+        android:text="Justin Bieber"
+        app:layout_constraintEnd_toEndOf="@+id/imgJustin"
+        tools:layout_editor_absoluteY="337dp" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="btnOK"
+        android:text="送出"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="我最喜歡的是："
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="90dp"
+        android:layout_height="101dp"
+        app:srcCompat="@drawable/ariana"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="614dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="108dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/cp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="614dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="101dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/Shawn"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="614dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="92dp"
+        android:layout_height="101dp"
+        app:srcCompat="@drawable/justin"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="614dp" />
 
 </android.support.constraint.ConstraintLayout>
